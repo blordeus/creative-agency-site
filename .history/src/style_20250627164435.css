@@ -1,0 +1,7 @@
+body {
+  scroll-behavior: smooth;
+}
+section {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}

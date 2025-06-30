@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Agency</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <main>
+      <header class="navbar">
+  <div class="navbar-left">
+    <a href="#" class="logo">
+      <img src="./src/assets/desktop/logo.svg" alt="Creative Logo" />
+    </a>
+  </div>
+
+  <div class="navbar-right">
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#" class="btn dark">Schedule a Call</a>
+    </nav>
+
+    <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+      <span class="bar top"></span>
+      <span class="bar middle"></span>
+      <span class="bar bottom"></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero hero-background">
+  <div class="hero-content">
+    <h1 class="hero-title">Branding & website design agency</h1>
+    <p class="hero-text">
+      We specialize in visual storytelling by creating cohesive brand and website design solutions for small businesses, giving lasting impressions to audiences in a digital world.
+    </p>
+    <a href="#" class="btn dark">Learn More</a>
+  </div>
+</section>
+
+
+      <footer>
+        <p>&copy; 2025 Creative Agency</p>
+      </footer>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+    <script>
+  const toggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggle.addEventListener("click", () => {
+    toggle.classList.toggle("active");
+    navLinks.classList.toggle("active");
+
+    // Accessibility update
+    const expanded = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", !expanded);
+  });
+</script>
+  </body>
+</html>
