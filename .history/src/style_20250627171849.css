@@ -1,0 +1,471 @@
+:root {
+  --red: #f94f4f;
+  --bg-black: #191921;
+  --white: #ffffff;
+  --text-black: #000000;
+
+  --font-heading: 'Commissioner', sans-serif;
+  --font-body: 'Commissioner', sans-serif;
+
+  --h1-size: 80px;
+  --h2-size: 56px;
+  --h3-size: 20px;
+  --body-size: 18px;
+  --line-height-body: 32px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+body {
+  font-family: var(--font-body);
+  font-size: var(--body-size);
+  line-height: var(--line-height-body);
+  color: var(--text-black);
+  background-color: var(--bg-white);
+}
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: var(--h1-size);
+  font-weight: 800;
+  line-height: 88px;
+}
+
+h2 {
+  font-size: var(--h2-size);
+  font-weight: 800;
+  line-height: 64px;
+}
+
+h3 {
+  font-size: var(--h3-size);
+  font-weight: 800;
+  line-height: 32px;
+}
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 100px;
+  /* position: sticky; */
+  top: 0;
+  z-index: 1000;
+  font-family: 'Commissioner', sans-serif;
+  margin-bottom: 16px;
+}
+
+/* Navbar Links */
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #000;
+}
+.logo img {
+  height: 24px;
+  margin-right: 0.5rem;
+}
+
+/* Container for full navbar */
+.navbar {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  /* position: sticky; */
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-left,
+.navbar-right {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Left side: white background with logo */
+.navbar-left {
+  background-color: white;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 2rem;
+}
+.logo img {
+  height: 32px;
+  transform: translateX(-3.5rem); 
+}
+
+/* Right side: red background with nav links */
+.navbar-right {
+  background-color: #f94f4f;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  padding-right: 8rem;
+  padding-left: 0rem;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  font-weight: 800;
+}
+
+/* Button */
+.nav-btn-dark {
+  background-color: #191921;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+/* Button hover effect */
+.nav-btn-dark:hover {
+  background-color: #101010;
+  color: #ffffff;
+}
+
+
+/* Hero Section */
+.hero {
+  position: relative;
+  min-height: 800px;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  padding-top: 5rem;
+  padding-bottom: 0;
+}
+
+/* Background image with gradient overlay */
+.hero-background {
+  background: 
+    linear-gradient(to right, #ffffff 35%, rgba(255, 255, 255, 0) 60%),
+    url('./assets/desktop/image-hero.jpg') top right no-repeat;
+  background-size: 55% auto; /* or 70% – adjust as needed */
+  background-repeat: no-repeat; 
+}
+
+/* Content layout */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin-left: 8rem;
+  color: #191921;
+}
+
+.hero-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4b4b4b;
+  margin-bottom: 2rem;
+}
+
+/* Button styling */
+.btn.dark {
+  background-color: var(--red);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Strategic Section */
+.design-strategic {
+  display: flex;
+  height: 600px; /* or auto with min-height */
+  width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.design-strategic .left-image,
+.design-strategic .right-content {
+  width: 50%;
+  height: 100%;
+}
+
+.left-image {
+  background: url('./assets/desktop/image-strategic.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.right-content {
+  background-color: #191921;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8rem;
+  position: relative;
+}
+
+
+/* Center overlap image */
+.center-overlap {
+  position: absolute;
+  top: 10rem;
+  left: -60px;
+  z-index: 1;
+}
+
+.center-overlap img {
+  width: 100px;
+  height: auto;
+}
+
+/* Typography */
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+  z-index: 2;
+  position: relative;
+}
+
+.body-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #fff;
+  margin-bottom: 2rem;
+  max-width: 420px;
+  z-index: 2;
+  position: relative;
+}
+
+/* Button */
+.strategic-btn-dark {
+  background-color: #191921;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  z-index: 2;
+  position: relative;
+}
+
+/* Button 1 */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-primary {
+  background-color: var(--red);
+  color: var(--white);
+  transition: background 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #d23e3e;
+}
+.button-red {
+  background-color: var(--red);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-red:hover {
+  background-color: #e33c3c;
+}
+
+.button-dark {
+  background-color: var(--bg-black);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-dark:hover {
+  background-color: #101010;
+}
+
+.button-outline {
+  background: transparent;
+  border: 2px solid var(--red);
+  color: var(--red);
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-outline:hover {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+/* Hamburger button (mobile only) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 30px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001; /* Above the nav panel */
+}
+.menu-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background: #000;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+/* When menu is active */
+.menu-toggle.active .top {
+  transform: translateY(8px) rotate(45deg);
+}
+.menu-toggle.active .middle {
+  opacity: 0;
+}
+.menu-toggle.active .bottom {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (min-width: 768px) {
+  .services {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.service {
+  background-color: var(--bg-black);
+  color: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+.service-title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.service-description {
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+}
+
+/* Button 2: Dark style */
+.btn-dark {
+  background-color: var(--white);
+  color: var(--bg-black);
+  transition: all 0.3s ease;
+}
+.btn-dark:hover {
+  background-color: #e1e1e1;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    left: 1rem;
+    flex-direction: column;
+    background-color: #f94f4f;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 1rem;
+  }
+
+  .bar {
+    width: 24px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+  }
+  .hero-content {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .design-strategic .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .left-image {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 2rem;
+  }
+
+  .center-overlap {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    margin-bottom: 2rem;
+  }
+
+  .right-content {
+    padding-left: 0;
+  }
+}

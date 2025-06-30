@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Agency</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <main>
+      <header class="navbar">
+  <div class="navbar-left">
+    <a href="#" class="logo">
+      <img src="./src/assets/desktop/logo.svg" alt="Creative Logo" />
+    </a>
+  </div>
+
+  <div class="navbar-right">
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#" class="nav-btn-dark">Schedule a Call</a>
+    </nav>
+
+    <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+      <span class="bar top"></span>
+      <span class="bar middle"></span>
+      <span class="bar bottom"></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero hero-background">
+  <div class="hero-content" >
+    <h1 class="hero-title">Branding & website design agency</h1>
+    <p class="hero-text">
+      We specialize in visual storytelling by creating cohesive brand and website design solutions for small businesses, giving lasting impressions to audiences in a digital world.
+    </p>
+    <a href="#" class="btn dark">Learn More</a>
+  </div>
+</section>
+
+<section class="design-strategic" >
+  <div class="left-image"></div>
+  <div class="right-content">
+    <img class="center-overlap" src="./src/assets/desktop/bg-pattern-wave-red.svg" alt="Decorative" class="visual" />
+    <h2 class="heading"><span style="color:#f94f4f;">Design</span> is strategic.</h2>
+    <p class="body-text">
+      “A well-crafted design strategy consistently produces desired outcomes and brand awareness. We are firm believers that success lies in creative collaboration with our clients.”
+    </p>
+    <a href="#" class="strategic-btn-dark">Schedule a Call</a>
+  </div>
+</section>
+
+<section class="approach-section">
+  <div class="approach-left">
+    <h2>Our approach for creating a winning brand</h2>
+  </div>
+
+  <div class="approach-right">
+    <div class="step">
+      <span class="step-number">01</span>
+      <h3>Brand Strategy</h3>
+      <p>Brand strategy is critical for long-term success. Outshining competitors and capturing the target audience are key.</p>
+    </div>
+    <div class="step">
+      <span class="step-number">02</span>
+      <h3>Brand Design</h3>
+      <p>Keeping the brand design unique and meaningful helps in communicating the brand’s timeless value effectively.</p>
+    </div>
+    <div class="step">
+      <span class="step-number">03</span>
+      <h3>Web Design</h3>
+      <p>A beautifully crafted website is the best tool for brand awareness, and ultimately results in increased revenues.</p>
+    </div>
+  </div>
+</section>
+
+<section class="carousel-section">
+  <div class="carousel-container">
+    <div class="carousel-text">
+      <h2 id="carousel-title">Brand naming & guidelines</h2>
+      <div class="carousel-nav">
+        <img id="prev" aria-label="Previous Slide" src="./src/assets/desktop/icon-arrow-previous.svg" alt="Project Image" />
+        <img id="next" aria-label="Next Slide" src="./src/assets/desktop/icon-arrow-next.svg" alt="Project Image Mobile" />
+      </div>
+    </div>
+        <img class="center-overlap" src="./src/assets/desktop/bg-pattern-wave-red.svg" alt="Decorative" class="visual" />
+
+    <div class="carousel-image" id="carousel-image">
+      <div class="carousel-caption">
+        <p id="carousel-subtitle">Lean Product Roadmap</p>
+        <span id="carousel-year">2019 Project</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+      <footer>
+        <p>&copy; 2025 Creative Agency</p>
+      </footer>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+    <script>
+  const toggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggle.addEventListener("click", () => {
+    toggle.classList.toggle("active");
+    navLinks.classList.toggle("active");
+
+    // Accessibility update
+    const expanded = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", !expanded);
+  });
+</script>
+  </body>
+</html>

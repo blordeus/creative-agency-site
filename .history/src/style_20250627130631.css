@@ -1,0 +1,42 @@
+:root {
+  --red: #f94f4f;
+  --bg-black: #191921;
+  --white: #ffffff;
+  --text-black: #000000;
+
+  --font-heading: 'Commissioner', sans-serif;
+  --font-body: 'Commissioner', sans-serif;
+
+  --h1-size: 80px;
+  --h2-size: 56px;
+  --h3-size: 20px;
+  --body-size: 18px;
+  --line-height-body: 32px;
+}
+
+/* Typography */
+body {
+  font-family: var(--font-body);
+  font-size: var(--body-size);
+  line-height: var(--line-height-body);
+  color: var(--text-black);
+}
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: var(--h1-size);
+  font-weight: 800;
+  line-height: 88px;
+}
+
+h2 {
+  font-size: var(--h2-size);
+  font-weight: 800;
+  line-height: 64px;
+}
+
+h3 {
+  font-size: var(--h3-size);
+  font-weight: 800;
+  line-height: 32px;
+}
