@@ -3,22 +3,21 @@ const slides = [
     title: "Brand naming & guidelines",
     subtitle: "Lean Product Roadmap",
     year: "2019 Project",
-    image: new URL('./assets/desktop/image-slide-1.jpg', import.meta.url).href
+    image: new"./src/assets/desktop/image-slide-1.jpg"
   },
   {
     title: "Brand identity & merchandise",
     subtitle: "New Majestic Hotel",
     year: "2018 Project",
-    image: new URL('./assets/desktop/image-slide-2.jpg', import.meta.url).href
+    image: "./src/assets/desktop/image-slide-2.jpg"
   },
   {
     title: "Brand identity & web design",
     subtitle: "Crypto Dashboard",
     year: "2016 Project",
-    image: new URL('./assets/desktop/image-slide-3.jpg', import.meta.url).href
+    image: "./src/assets/desktop/image-slide-3.jpg"
   }
 ];
-
 
 let current = 0;
 const title = document.getElementById('carousel-title');
