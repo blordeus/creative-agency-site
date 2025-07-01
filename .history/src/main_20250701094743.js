@@ -3,7 +3,7 @@ const slides = [
     title: "Brand naming & guidelines",
     subtitle: "Lean Product Roadmap",
     year: "2019 Project",
-    image: "./public/assets/desktop/image-slide-1.jpg"
+    image: "/public/assets/desktop/image-slide-1.jpg"
   },
   {
     title: "Brand identity & merchandise",

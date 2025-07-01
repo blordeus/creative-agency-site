@@ -3,13 +3,13 @@ const slides = [
     title: "Brand naming & guidelines",
     subtitle: "Lean Product Roadmap",
     year: "2019 Project",
-    image: "./public/assets/desktop/image-slide-1.jpg"
+    image: "./src/assets/desktop/image-slide-1.jpg"
   },
   {
     title: "Brand identity & merchandise",
     subtitle: "New Majestic Hotel",
     year: "2018 Project",
-    image: "./public/assets/desktop/image-slide-2.jpg"
+    image: "./src/assets/desktop/image-slide-2.jpg"
   },
   {
     title: "Brand identity & web design",
