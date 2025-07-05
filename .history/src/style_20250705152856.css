@@ -842,7 +842,7 @@ h3 {
   .hero {
     flex-direction: column;
     padding: 4rem 2.5rem 3rem;
-    min-height: 800px;
+    min-height: 700px;
   }
 
   .hero-background {
@@ -853,8 +853,8 @@ h3 {
 
   .hero-content {
     position: relative;
-    top: 180px;
-    margin-top: 30%;
+    top: 210px;
+    margin-top
     margin-left: 0;
     margin-right: 5%;
     text-align: left;
@@ -896,7 +896,7 @@ h3 {
 
   .left-image {
     background: url('./assets/mobile/image-strategic.jpg') no-repeat bottom center;
-    background-size: cover;
+    background-size: contain;
     height: 300px;
   }
 

@@ -853,8 +853,8 @@ h3 {
 
   .hero-content {
     position: relative;
-    top: 180px;
-    margin-top: 30%;
+    top: 370px;
+    margin-top: auto;
     margin-left: 0;
     margin-right: 5%;
     text-align: left;
